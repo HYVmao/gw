@@ -1,0 +1,7 @@
+*{margin:0; padding:0;  }
+
+.warp{
+    background-color: salmon;
+    height: 550px;
+    overflow: hidden;
+}
