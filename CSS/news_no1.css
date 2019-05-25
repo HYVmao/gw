@@ -8,6 +8,11 @@ a{
     text-decoration: none;
 }
 
+.news_no1{
+
+    width:auto;
+    display: block;
+}
 
 .news_no1_m{
     margin-top: 15px;
@@ -31,7 +36,6 @@ ul{
     text-overflow: ellipsis;
     overflow: hidden;
 }
-
 
 .news_no1_r_news{
     margin-left: 20px;
@@ -73,3 +77,6 @@ ul{
 .news_no1_r_head a:hover{
     font-weight: normal;
 }
+
+
+.clearfloat{clear:both;height:0;font-size: 1px;line-height: 0px;}
