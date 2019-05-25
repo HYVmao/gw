@@ -14,7 +14,7 @@
     padding-left: 15px;
     padding-right: 15px;
     height: 75px;
-    width: 1140px;
+    width: auto;
     background-color: #980001;
 }
 
@@ -35,46 +35,54 @@
     padding: 20px;
 }
 .btn{
-    width: 320px;
+    width: 100%;
 }
 
 .dropdown-menu{
     width: 320px;
 }
 
+
+.logo_box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.logo_box img{
+    width: 100%;
+    height:100%;
+}
+
 .navigation{
     width: auto;
-    height: 60px;
+    height: 50px;
     margin-top: 17px;
-    background-color: #333333;
-}
-
-.navigation_list{
-    width: 1140px;
-    height: 60px;
-    margin: 0 auto;
-    margin-top: 17px;
-    background-color: #333333;
-}
-
-.navigation_list ul{
-    display: inline-block;
-    list-style: none;
-    background-color: #333333;
 
 }
 
-.navigation_list ul li{
-    border-left: 1px solid #3f3f3f;
-    border-top: 1px solid #3f3f3f;
-    text-align: center;
-    line-height: 60px;
-    font-size: 17px;
-    float: left;
-    width: 228px;
-    height: 60px;
-
+.navbar-nav ul{
+    width:100%;
 }
+
+.navbar-nav li{
+    width:20%;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .navigation_list a{
     color: white;
