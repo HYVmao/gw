@@ -70,7 +70,7 @@
 .navigation_folling li{
     text-align: center;
     width:20%;
-    height: auto;
+    height: 60px;
     float: left;
     background-color: #333333;
     border-right: 1px solid;
@@ -86,19 +86,6 @@
     height: 60px;
     background-color: #3f3f3f;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .navigation_list a{
