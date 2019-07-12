@@ -1,6 +1,42 @@
 *{margin:0; padding:0;  }
 
 .warp{
-    height: 50%;
     overflow: hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.item img{
+    height:100%;
+    width:auto;
+}
+
+.warps{
+    height: 378px;
+    margin-top: 15px;
+}
+
+.warp_s{
+    top : 10%;
+    overflow: hidden;
+}
+
+
+#sildeshow{
+    height: 249px;
+    overflow: hidden;
+    position: relative;
+}
+
+#sildeshow img{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s linear;
+
+}
+
+#sildeshow img.active{
+    opacity: 1;
+
 }

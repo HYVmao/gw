@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery带文字标题左右切换幻灯轮播图插件</title>
+<link rel="stylesheet" type="text/css" href="www.jsdaima.com.css">
+</head>
+
+<body>
+
+<div id="banners" class="ui-banner">
+	<ul class="ui-banner-slides">
+		<li><a href="http://www.jsdaima.com/" target="_blank"><img src="../images/theme1.jpg"></a></li>
+		<li><a href="http://www.jsdaima.com/" target="_blank"><img src="../images/theme2.jpg"></a></li>
+		<li><a href="http://www.jsdaima.com/" target="_blank"><img src="../images/theme3.jpg"></a></li>
+		<li><a href="http://www.jsdaima.com/" target="_blank"><img src="../images/theme1.jpg"></a></li>
+		<li><a href="http://www.jsdaima.com/" target="_blank"><img src="../images/theme2.jpg"></a></li>
+		<li><a href="http://www.jsdaima.com/" target="_blank"><img src="../images/theme3.jpg"></a></li>
+		<li><a href="http://www.jsdaima.com/" target="_blank"><img src="../images/theme1.jpg"></a></li>
+		<li><a href="http://www.jsdaima.com/" target="_blank"><img src="../images/theme2.jpg"></a></li>
+	</ul><!--ui-banner-slides end-->
+	<ul class="ui-banner-slogans">
+		<li>新！让心智能必要的欧米茄三</li>
+		<li>新！支持你的皮肤细胞水平上</li>
+		<li>新！御温泉尽情享受豪华</li>
+		<li>新！得到报酬购物现金回赠</li>
+		<li>新！在其最好的辐射防护</li>
+		<li>今天释放等渗电力</li>
+		<li>动机的改变，面对英国美容</li>
+		<li>得到了春天的味道</li>
+    </ul><!--ui-banner-slogans end-->
+    <a href="#" class="ui-banner-arrow ui-banner-arrow-prev png_bg"></a>
+    <a href="#" class="ui-banner-arrow ui-banner-arrow-next png_bg"></a>
+</div>
+
+<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.6/jquery-ui.js"></script>
+<script src="jqueryui.bannerize.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#banners').bannerize({
+		shuffle: 1,
+		interval: "5"
+	});
+});
+</script>
+
+</body>
+</html>

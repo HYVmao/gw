@@ -1,6 +1,10 @@
+
+li{
+    list-style: none;
+}
+
 .news_no1 a:hover{
     color: #c90202;
-    font-weight: bold;
 }
 
 a{
@@ -9,7 +13,6 @@ a{
 }
 
 .news_no1{
-
     width:auto;
     display: block;
 }
@@ -26,7 +29,7 @@ a{
 
 }
 
-ul{
+.news_no1_m_news ul{
     list-style: none;
 }
 
@@ -37,33 +40,73 @@ ul{
     overflow: hidden;
 }
 
-.news_no1_r_news{
-    margin-left: 20px;
+
+
+
+
+.news_no1_r_time{
+    background-color: #b0b0b0;
+    width: 15%;
+    padding: 3px 0;
+    display: inline-block;
+    float: left;
+
 }
 
+.time_day{
 
-.news_no1_r_head{
-    margin-left: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+.time_month{
+
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
 }
 
-.news_no1_r_news span{
-    font-size: 18px;
-    line-height: 53px;
-    color: #c90202;
-    margin-right: 25px;
-    margin-left: 7px;
-}
-
-.news_no1_r_news a{
-    font-size: 13px;
-    color: #3a3a3a;
-    line-height: 53px;
-}
-
-.news_no1_r_news li{
+.new_1_r_content{
+    padding-left: 18px;
+    display: inline-block;
+    width: 84.5%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.icon{
+    font-size: 24px;
+    line-height: 40px;
+    color: #3f3f3f;
+
+}
+
+
+
+.news_no1_r{
+    margin-top: 15px;
+    height: 378px;
+}
+
+.news_no1_r_more{
+    float: right;
+    font-size: 13px;
+    line-height: 40px;
+    margin-top: 1px;
+    color: #c90202
+}
+
+.news_no1_r_small_title{
+    font-size: 17px;
+    font-weight: lighter;
+    color: #767676;
+}
+
+.news_no1_r_news a{
+    font-size: 15px;
+    color: #3a3a3a;
+    line-height: 53px;
 }
 
 .news_no1_r_news ul :hover{
@@ -72,8 +115,24 @@ ul{
 
 .news_no1 a:hover{
     text-decoration: none;
+    font-style: normal;
+}
+
+.new_no2_l_news_title a:hover{
+    text-decoration: none;
+    font-style: normal;
+    color: #c90202;
 }
 
 .news_no1_r_head a:hover{
     font-weight: normal;
+}
+
+.news_no1_r_news ul :hover .news_no1_r_time{
+    background-color: #f0a499;
+}
+
+.news_no1_r_icon{
+    color: rgb(195, 23, 23);
+    font-size: 10px;
 }
