@@ -1,152 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Title</title>
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/warp.css">
     <link rel="stylesheet" href="../CSS/news_no1.css">
     <link rel="stylesheet" href="../CSS/news_no2.css">
     <link rel="stylesheet" href="../CSS/foot.css">
+    <link rel="stylesheet" href="../CSS/msfc.css">
+    <link rel="stylesheet" href="../CSS/lower_nav.css">
+    <link rel="stylesheet" href="../CSS/bootsnav.css"/>
+
+
+    <script type="text/javascript" src="../JS/warp_s.js"></script>
+    <script type="text/javascript" src="../JS/lower_nav.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../JS/bootsnav.js"></script>
 
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="http://jrain.oscitas.netdna-cdn.com/tutorial/css/fontawesome-all.min.css">
 </head>
+
 <body>
-    <!--ss-->
-    <div class="name">
+<!--ss-->
+<header class="header ">
+    <div class="main-header hidden-xs">
         <div class="container">
-            <div class="name_insert">
-                <div class="logo_box col-lg-5 col-md-5 col-sm-5 col-xs-5">
+            <div class="row">
+                <div class="logo col-lg-8 col-md-7 col-sm-7">
                     <a href="#">
-                        <img class=" logo" src="../images/logo.png">
+                        <img src="../images/logo.png" alt = "Logo" width = "100%">
                     </a>
-
                 </div>
+                <div class="col-lg-4 col-md-5 col-sm-5 hidden-xs visible-lg">
+                    <div class="quick-link">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                友情链接 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" target="_blank">长安大学主页</a></li>
+                                <li><a href="#" target="_blank">学生工作指导委员会</a></li>
+                                <li><a href="#" target="_blank">学生工作指导委员会</a></li>
+                                <li><a href="#" target="_blank">学生工作指导委员会</a></li>
+                                <li><a href="#" target="_blank">学生工作指导委员会</a></li>
+                                <li><a href="#" target="_blank">学生工作指导委员会</a></li>
+                                <li><a href="#" target="_blank">学生工作指导委员会</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hidden-xs href">
-                    <div class="dropdown">
-                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">友情链接<span class="caret"></span></button>
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                            <li role="presentation">
-                                <a role="menuitem" tabindex="-1" href="#">学生工作指导委员会</a>
+    <div class="demo">
+        <div class="container">
+            <div class="row col-md-12">
+                <nav class="navbar navbar-default navbar-mobile bootsnav">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="navbar-img visible-sm visible-xs">
+                            <img src="../images/logo.png" width="100%">
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li class="active"><a href="#" data-hover="Home">官网首页 <span data-hover="Home"></span></a></li>
+                            <li><a href="#" data-hover="About">研究团队<span data-hover="About"></span></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="Shortcodes">教育教学<span data-hover="Shortcodes"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">重点学科</a></li>
+                                    <li><a href="#">质量工程</a></li>
+                                    <li><a href="#">学生活动</a></li>
+                                    <li><a href="#">本科教学工程</a></li>
+                                    <li><a href="#">网络教学平台</a></li>
+                                </ul>
                             </li>
-                            <li role="presentation">
-                                <a role="menuitem" tabindex="-1" href="#">马院教育培训中心</a>
+                            <li><a href="#" data-hover="Contact">机构设置<span data-hover="Contact"></span></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="Pages">科学研究<span data-hover="Pages"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">科研概况</a></li>
+                                    <li><a href="#">科研平台</a></li>
+                                    
+                                    <li><a href="#">人文社科</a></li>
+                                    <li><a href="#">科研成果</a></li>
+                                    <li><a href="#">交流合作</a></li>
+                                </ul>
                             </li>
+                            <li><a href="#" data-hover="Portfolio">工作简报<span data-hover="Portfolio"></span></a></li>
+                            <li><a href="#" data-hover="Contact">公共服务<span data-hover="Contact"></span></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="Shortcodes">师资队伍<span data-hover="Shortcodes"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">两院院士</a></li>
+                                    <li><a href="#">特聘教授</a></li>
+                                    <li><a href="#">二级教授</a></li>
+                                    <li><a href="#">硕士生导师</a></li>
+                                    <li><a href="#">博士生导师</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" data-hover="Contact">联系我们<span data-hover="Contact"></span></a></li>
                         </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+
+
+</div>
+
+<!--轮播图-->
+<div id="myCarousel" class="carousel slide warp">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="#"><img src="../images/theme1.jpg" alt="First slide"></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="../images/theme2.jpg" alt="Second slide"></a>
+        </div>
+        <div class="item">
+            <a><img src="../images/theme3.jpg" alt="Third slide"></a>
+        </div>
+    </div>
+     <!-- 轮播（Carousel）导航 -->
+     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+
+<!--news_no1-->
+<div class="news_no1">
+    <div class="news_no1">
+        <div class="container">
+            <div class="row">
+                <!--小轮播图-->
+                <div class="col-lg-4 warps">
+                    <div class="news_no1_r_head">
+                        <a href="#" class="icon news_no1_r_title">
+
+                            <span class="glyphicon glyphicon-volume-down" style="color: rgb(255, 0, 50);"></span>
+                            通知公告<span class="news_no1_r_small_title">Top Notices</span>
+                        </a>
+                    </div>
+                    <div class="warp_s" id="sildeshow">
+                        <img class="active" src="../images/warp_s2.jpg" height="100%" />
+                        <img src="../images/warp_s3.jpg" height="100%" class="aa"/>
                     </div>
                 </div>
 
-            </div>
-        </div>
-        <div class="navigation">
-            <div class="navigation_folling">
-                <ul>
-                    <li style="background-color:#79120a;"><a href="#">官网首页</a></li>
-                    <li><a href="#">中心简介</a></li>
-                    <li><a href="#">研究团队</a></li>
-                    <li><a href="#">工作简报</a></li>
-                    <li><a href="#">决策咨询</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    </div>
-
-    <!--轮播图-->
-    <div id="myCarousel" class="carousel slide warp">
-        <!-- 轮播（Carousel）指标 -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <!-- 轮播（Carousel）项目 -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <a href="#"><img src="../images/theme1.jpg" alt="First slide" style=" width:100%; height:auto;"></a>
-                <div class="carousel-caption">标题 1</div>
-            </div>
-            <div class="item">
-                <a href="#"><img src="../images/theme2.jpg" alt="Second slide" style=" width:100%; height:auto;"></a>
-                <div class="carousel-caption">标题 2</div>
-            </div>
-            <div class="item">
-                <a><img src="../images/theme3.jpg" alt="Third slide" style=" width:100%; height:auto;"></a>
-                <div class="carousel-caption">标题 3</div>
-            </div>
-        </div>
-        <!-- 轮播（Carousel）导航 -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-
-    <!--news_no1-->
-    <div class="news_no1">
-        <div class="news_no1" style="width:auto;">
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0" style="display: inline-block;"></div>
-            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-
-                <!--小轮播图-->
-                <div class="col-lg-3" style="background-color:cadetblue;">
-
-                </div>
-
                 <!--中间新闻-->
-                <div class="col-lg-3 news_no1_m news_no1_m" >
+                <div class="col-lg-4 news_no1_m news_no1_m" >
                     <div class="news_no1_m_more">
                         <a><p style="text-align: right; color: #c90202; font-size: 13px; line-height: 40px">更多>></p></a>
                     </div>
 
                     <div class="news_no1_m_news">
-                        <ul>
                             <li>
-                                <a href="#"><img src="../images/list-logo.png">长安大学马克思主义学院首届大型校际朗诵比赛圆满结束</a>
+
+                                <a href="#"><span class="glyphicon glyphicon-play news_no1_r_icon">&nbsp;</span>长安大学首届大学生思政公开课大赛圆满落幕</a>
                             </li>
                             <li>
 
-                                <a href="#"><img src="../images/list-logo.png">刘吉发教授应邀参加“第四届丝博会商洛市招商推介洽谈会暨项目集中签约仪式”并做主旨演讲</a>
+                                <a href="#"><span class="glyphicon glyphicon-play news_no1_r_icon">&nbsp;</span>中共中央文献研究室宋毅军研究员应邀来我院作学术报告</a>
                             </li>
                             <li>
 
-                                <a href="#"><img src="../images/list-logo.png">马克思主义学院中青年教师教学竞赛圆满落幕</a>
+                                <a href="#"><span class="glyphicon glyphicon-play news_no1_r_icon">&nbsp;</span>刘吉发教授应邀为陕西师范大学全国高校“双带头人”教师党支部书记工作室党员教师作党日活动专题讲座</a>
                             </li>
                             <li>
 
-                                <a href="#"><img src="../images/list-logo.png">长安大学首届大学生思政公开课大赛圆满落幕</a>
+                                <a href="#"><span class="glyphicon glyphicon-play news_no1_r_icon">&nbsp;</span>哲学与社会发展研究所刘康乐博士受聘参加《中华续道藏》编纂工程</a>
                             </li>
                             <li>
 
-                                <a href="#"><img src="../images/list-logo.png">中共中央文献研究室宋毅军研究员应邀来我院作学术报告</a>
+                                <a href="#"><span class="glyphicon glyphicon-play news_no1_r_icon">&nbsp;</span>马克思主义学院组织学习习近平总书记在纪念五四运动100周年大会上的重要讲话</a>
+                            </li>
+
+                            <li>
+
+                                <a href="#"><span class="glyphicon glyphicon-play news_no1_r_icon">&nbsp;</span>长安大学首届大学生思政公开课大赛圆满落幕</a>
                             </li>
                             <li>
 
-                                <a href="#"><img src="../images/list-logo.png">刘吉发教授应邀为陕西师范大学全国高校“双带头人”教师党支部书记工作室党员教师作党日活动专题讲座</a>
+                                <a href="#"><span class="glyphicon glyphicon-play news_no1_r_icon">&nbsp;</span>中共中央文献研究室宋毅军研究员应邀来我院作学术报告</a>
                             </li>
                             <li>
 
-                                <a href="#"><img src="../images/list-logo.png">哲学与社会发展研究所刘康乐博士受聘参加《中华续道藏》编纂工程</a>
+                                <a href="#"><span class="glyphicon glyphicon-play news_no1_r_icon">&nbsp;</span>中共中央文献研究室宋毅军研究员应邀来我院作学术报告</a>
                             </li>
-                            <li>
 
-                                <a href="#"><img src="../images/list-logo.png">马克思主义学院组织学习习近平总书记在纪念五四运动100周年大会上的重要讲话</a>
-                            </li>
                         </ul>
                     </div>
 
@@ -154,214 +223,380 @@
                 </div>
 
                 <!--右边新闻-->
-                <div class="col-lg-4 col-md-4 col-sm-12 col-sm-12 news_no1_r" style="margin-top: 15px; height: 378px;">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-sm-12 news_no1_r">
                     <div class="news_no1_r_head">
-                        <span style="float: right; font-size: 13px; line-height: 40px; margin-top: 1px; color: #c90202">更多>></span>
-                        <a href="#" style="font-size: 24px; line-height: 40px; color: #3f3f3f; padding-left: 40px">
-                            通知公告<span style="font-size: 17px; padding-left: 10px; font-weight: lighter; color: #767676">Top Notices</span>
+                        <span class="news_no1_r_more">更多>></span>
+                        <a href="#" class="icon news_no1_r_title">
+
+                            <span class="glyphicon glyphicon-volume-down" style="color: rgb(255, 0, 50);"></span>
+                            通知公告<span class="news_no1_r_small_title">Top Notices</span>
                         </a>
                     </div>
 
                     <div class="news_no1_r_news">
                         <ul>
                             <li>
-                                <span>05/07</span>
-                                <a href="#">长安大学马克+思主义学院2019年博士研究生招生复试通知</a>
+                                <div class="news_no1_r_time">
+                                    <div class="time_day">07</div>
+                                    <div class="time_month">05月</div>
+                                </div>
+                                <div class="new_1_r_content">
+                                    <a href="#">长安大学马克+思主义学院2019年博士研究生招生复试通知</a>
+                                </div>
                             </li>
                             <li>
-                                <span>04/25</span>
-                                <a href="#">关于组织申报陕西省古籍整理与研究类课题的通知</a>
+                                <div class="news_no1_r_time">
+                                    <div class="time_day">25</div>
+                                    <div class="time_month">04月</div>
+                                </div>
+                                <div class="new_1_r_content">
+                                    <a href="#">关于组织申报陕西省古籍整理与研究类课题的通知</a>
+                                </div>
                             </li>
                             <li>
-                                <span>04/25</span>
-                                <a href="#">关于开展陕西省重大现实问题研究项目申报工作的通知</a>
+                                <div class="news_no1_r_time">
+                                    <div class="time_day">25</div>
+                                    <div class="time_month">04月</div>
+                                </div>
+                                <div class="new_1_r_content">
+                                    <a href="#">关于开展陕西省重大现实问题研究项目申报工作的通知</a>
+                                </div>
                             </li>
                             <li>
-                                <span>04/24</span>
-                                <a href="#">关于2019年度“五一”放假调课的通知</a>
+                                <div class="news_no1_r_time">
+                                    <div class="time_day">24</div>
+                                    <div class="time_month">04月</div>
+                                </div>
+                                <div class="new_1_r_content">
+                                    <a href="#">关于2019年度“五一”放假调课的通知</a>
+                                </div>
                             </li>
                             <li>
-                                <span>04/16</span>
-                                <a href="#">马克思主义学院2019届研究生学位答辩安排通知</a>
+                                <div class="news_no1_r_time">
+                                    <div class="time_day">16</div>
+                                    <div class="time_month">04月</div>
+                                </div>
+                                <div class="new_1_r_content">
+                                    <a href="#">马克思主义学院2019届研究生学位答辩安排通知</a>
+                                </div>
                             </li>
                             <li>
-                                <span>04/11</span>
-                                <a href="#">关于2019年度陕西省社会科学基金项目申报工作的通知</a>
+                                <div class="news_no1_r_time">
+                                    <div class="time_day">11</div>
+                                    <div class="time_month">04月</div>
+                                </div>
+                                <div class="new_1_r_content">
+                                    <a href="#">关于2019年度陕西省社会科学基金项目申报工作的通知</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-                
             </div>
-
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0" style="display: inline-block;"></div>
-            <br style="clear:both;">
         </div>
+
+        <br style="clear:both;">
     </div>
+</div>
 
-    <!--news_no2-->
-    <div class="news_no0">
-        <div class="news_no0" style="width:auto;">
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0" style="display: inline-block;"></div>
-            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
-
-
-                <div class="news_no2_four col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height: 560px;">
-                    <div class="news_no2_four_l">
-                        <div class="news_no2_four_img">
-                            <a href="#"><img src="../images/news1.jpg"></a>
+<!--news_no2-->
+<div class="news_no2">
+    <div class="news_no2">
+        <div class="container">
+            <div class="row">
+                <div class="news_no2_l col-lg-4 col-md-4 col-sm-12 col-sm-12">
+                    <p class="news_no2_l_title"><span class="glyphicon glyphicon-book" style="color: rgb(255, 0, 0);">&nbsp;</span>理论研究</p>
+                    <HR class="hr">
+                    <div class="news_no2_l_new">
+                        <div class="news_no2_l_img">
+                            <img src="../images/new_no2_l_pic.jpg">
                         </div>
-                        <div class="news_no2_four_a">
-                            <a href="#">国际古植物学会主席Steven R. Manchester教授访问我校</a>
-                        </div>
-
-                    </div>
-
-                    <div class="news_no2_four_r">
-                        <div class="news_no2_four_img">
-                            <a href="#"><img src="../images/news2.jpg"></a>
-                        </div>
-                        <div class="news_no2_four_a">
-                            <a href="#">我校基础教育合作办学工作稳步推进</a>
+                        <div class="news_no2_l_neir">
+                            <div class="new_no2_l_news_title">
+                                <a href="#">校党委副书记周承调研马克思主义学院建设发展情况</a>
+                            </div>
+                            <div class="new_no2_l_news_text">
+                                <p>6月4日上午，上海交通大学党委副书记、纪委书记周承和纪委副书记李昕荣到马克思主义</p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="news_no2_four_l">
-                        <div class="news_no2_four_img">
-                            <a href="#"><img src="../images/news3.jpg"></a>
-                        </div>
-                        <div class="news_no2_four_a">
-                            <a href="#">全省民族工作深度调研领导小组第一组来我校开展调研和座谈</a>
-                        </div>
-                    </div>
-
-                    <div class="news_no2_four_r">
-                        <div class="news_no2_four_img">
-                            <a href="#"><img src="../images/news4.jpg"></a>
-                        </div>
-                        <div class="news_no2_four_a">
-                            <a href="#">学校召开2019年学生工作第一次例会暨校园安全稳定工作专题会</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="news_no2_data col-lg-4 col-md-4 col-sm-12 col-xs-12" style=" background-color:coral; height: 560px;">
-
-                </div>
-
-
-                <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
-
-            </div>
-
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0" style="display: inline-block;"></div>
-            <br style="clear:both;">
-        </div>
-    </div>
-
-
-    <!--页脚-->
-    <div class="foot">
-        <div style=" width:auto;">
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
-            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-
-                <div class="col-xs-10 col-md-10 col-sm-10 col-xs-10 foot_all">
-                    <div class="foot_1 col-xs-3 col-md-3 col-sm-3 col-xs-6">
-                        <div class="foot_1_head">
-                            <p>学生工作</p>
-                        </div>
-                        <div class="foot_1_content">
-                            <ul>
-                                <li>
-                                    <a href="#">办事指南</a>
-                                </li>
-                                <li>
-                                    <a href="#">教学资料</a>
-                                </li>
-                                <li>
-                                    <a href="#">文档下载</a>
-                                </li>
-                                <li>
-                                    <a href="#">就业信息</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="foot_2 col-xs-3 col-md-3 col-sm-3 col-xs-6">
-                        <div class="foot_2_head">
-                            <p>快速链接</p>
-                        </div>
-                        <div class="foot_2_content">
-                            <ul>
-                                <li>
-                                    <a href="#">长安大学主页</a>
-                                </li>
-                                <li>
-                                    <a href="#">学生工作知道委员会</a>
-                                </li>
-                                <li>
-                                    <a href="#">长安大学教务处</a>
-                                </li>
-                                <li>
-                                    <a href="#">长安大学图书馆</a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                    <div class="foot_2 col-xs-3 col-md-3 col-sm-3 col-xs-6">
-                        <div class="foot_2_head">
-                            <p>联系我们</p>
-                        </div>
-                        <div class="foot_2_content">
-                            <ul>
-                                <li>
-                                    <span class="glyphicon glyphicon-map-marker">&nbsp;</span><a href="#">这是一个地址</a>
-                                </li>
-                                <li>
-                                    <span class="glyphicon glyphicon-envelope">&nbsp;</span><a href="#">这是一个邮编</a>
-                                </li>
-                                <li>
-                                    <span class="glyphicon glyphicon-earphone">&nbsp;</span><a href="#">这是一个电话</a>
-                                </li>
-                                <li>
-                                    <span class="glyphicon glyphicon-envelope">&nbsp;</span><a href="#">这是一个邮箱</a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                    <div class="foot_2 col-xs-3 col-md-3 col-sm-3 col-xs-6">
-                        <div class="foot_2_head">
-                            <p>微信公众号</p>
-                        </div>
-                        <div class="foot_2_content">
-                            <img src="../images/wechat_code.jpg">
-
-                        </div>
+                    <br>
+                    <div class="news_no2_l_news">
+                        <ul>
+                            <li><a href="#">校党委副书记周承调研马克思主义学院建设发展情况</a></li>
+                            <li><a href="#">机关党委赴商南县青山镇开展党建帮扶工作</a></li>
+                            <li><a href="#">我校2019年教职工乒乓球团体比赛圆满结束</a></li>
+                            <li><a href="#">体育系党总支组织党员教师赴延安开展红色教育学习活动</a></li>
+                            <li><a href="#">我校开展“绿色发展  节能先行”“低碳行动，保卫蓝天”节能宣传活动</a></li>
+                            <li><a href="#">我校开展“绿色发展  节能先行”“低碳行动，保卫蓝天”节能宣传活动</a></li>
+                        </ul>
                     </div>
 
                 </div>
 
+                <div class="news_no2_l col-lg-4 col-md-4 col-sm-12 col-sm-12">
+                    <p class="news_no2_l_title"><span class="glyphicon glyphicon-globe" style="color: rgb(255, 0, 50);">&nbsp;</span>实践创新</p>
+                    <HR class="hr">
+                    <div class="news_no2_l_new">
+                        <div class="news_no2_l_img">
+                            <img src="../images/new_no2_l_pic.jpg">
+                        </div>
+                        <div class="news_no2_l_neir">
+                            <div class="new_no2_l_news_title">
+                                <a href="#">校党委副书记周承调研马克思主义学院建设发展情况</a>
+                            </div>
+                            <div class="new_no2_l_news_text">
+                                <p>6月4日上午，上海交通大学党委副书记、纪委书记周承和纪委副书记李昕荣到马克思主义</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="news_no2_l_news">
+                        <ul>
+                            <li><a href="#">体育系党总支组织党员教师赴延安开展红色教育学习活动</a></li>
+                            <li><a href="#">我校开展“绿色发展  节能先行”“低碳行动，保卫蓝天”节能宣传活动</a></li>
+                            <li><a href="#">党委宣传部召开2018—2019学年长安通讯社总结暨表彰大会</a></li>
+                            <li><a href="#">我校“尊法守法·携手筑梦”服务农民工法治宣传队在佳县开讲</a></li>
+                            <li><a href="#">离退休处党总支和附属学校党总支赴商南县石垭子村开展党建帮扶工作</a></li>
+                            <li><a href="#">我校开展“绿色发展  节能先行”“低碳行动，保卫蓝天”节能宣传活动</a></li>
+                        </ul>
+                    </div>
+                </div>
 
+                <div class="news_no2_l col-lg-4 col-md-4 col-sm-12 col-sm-12">
+                    <p class="news_no2_l_title"><span class="glyphicon glyphicon-globe" style="color: rgb(255, 0, 50);">&nbsp;</span>联系我们</p>
+                    <HR class="hr">
+                    <div class="lxwm_pic">
+                        <a href="#"><img src="../images/lxwm1.jpg"></a>
+                    </div>
+                    <div class="lxwm_pic">
+                        <a href="#"><img src="../images/lxwm2.jpg"></a>
+                    </div>
+                    <div class="lxwm_pic">
+                        <a href="#"><img src="../images/lxwm3.jpg"></a>
+                    </div>
+                    <div class="lxwm_pic">
+                        <a href="#"><img src="../images/lxwm4.jpg"></a>
+                    </div>
+                </div>
 
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
             </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0">
+        </div>
+        <br style="clear:both;">
+    </div>
+</div>
 
+<!--名师风采-->
+<div class="msfc">
+    <div class="container">
+        <div class="head-title">
+            <p class="text-center">名师风采</p>
+        </div>
+        <div class="home-item index-alumni">
+            <div class="grey_bg"></div>
+                <div class="container"></div>
+                    <div class="alumni-box">
+                        <div class="index-new">
+                            <div class="indexadd">
+                                <div id="banners" class="ui-banner row">
+                                    <ul class="ui-banner-slides col-lg-9 col-md-8 col-xs-12">
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                <img src="../images/msfc_lzz.jpg" alt="刘状壮">
+                                                <h4>刘状壮</h4>
+                                                <span>公路学院</span>
+                                                <p>刘状壮，男，江苏宿迁人，1986年7月出生，长安大学与加州大学洛杉矶分校（UCLA）联合培养博士，现为长安大学公路学院道路研究所副教授。近年来，研究主要围绕特殊地区与特殊环境下交通基础设施建设面临的科学问题与工程难题开展。</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                <img src="../images/msfc_zc.png" alt="张驰">
+                                                <h4>张驰</h4>
+                                                <span>公路学院</span>
+                                                <p>张驰,副教授生于1981年8月，四川宜宾人。长安大学公路学院交通与道路工程总体研究所副教授，硕士生导师。</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                <img src="../images/msfc_blb.jpg" alt=" 白礼彪">
+                                                <h4>白礼彪</h4>
+                                                <span>公路学院</span>
+                                                <p>白礼彪,副教授、硕士生导师。西北工业大学管理科学与工程博士、北京航天航空大学管理科学与工程博士后、国际项目管理资质认证（IPMP）培训师、AEIC学术交流中心组委会委员、系统工程学会会员、西安华鼎项目管理咨询有限责任公司高级咨询师/培训师、国家一级建造师。</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                <img src="../images/msfc_mcq.jpg" alt="马超群">
+                                                <h4>马超群</h4>
+                                                <span>公路学院</span>
+                                                <p>马超群，男，工学博士、副教授、硕导。毕业于长安大学。主要讲授《城市道路与交通规划》、《城市轨道交通规划与设计》等研究生课程和《交通工程》、《列车运行计算与设计》、《城市总体规划》等本科生课程。主要研究方向：交通规划、轨道交通规划与客流分析等。主持省部级科研项目2项、厅局级项目3项、中央高校基金2项、企事业单位委托项目30多项；主持省部级教改项目1项、校级教改项目3项。主编教材2部，参编教材4部，在国内外重要刊物和学术会议上发表论文20余篇。</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                <img src="../images/msfc_wk.png" alt="魏堃">
+                                                <h4>魏堃</h4>
+                                                <span>公路学院</span>
+                                                <p>魏堃，男，1986年11月生，博士，副教授，硕士生导师。2005至2014年在西北工业大学获得学士和博士学位（硕博连读）。2014年进入公路学院道路系（所）从事道路工程领域的教学与科研工作。</p>
+                                            </a>
+                                        </li>
+                                    </ul><!--ui-banner-slides end-->
+                                    <ul class="ui-banner-slogans col-lg-3 col-md-4 hidden-xs hidden-sm">
+                                        <li class="ui-line">
+                                            <div class="thumb">
+                                                <img src="../images/msfc_lzz.jpg" alt="刘状壮">
+                                            </div>
+                                            <div class="con">
+                                                <h5>刘状壮</h5>
+                                                <span>公路学院</span>
+                                            </div>
+                                        </li>
+                                        <li class="ui-line">
+                                            <div class="thumb">
+                                                <img src="../images/msfc_zc.png" alt="张驰">
+                                            </div>
+                                            <div class="con">
+                                                <h5>张驰</h5>
+                                                <span>公路学院</span>
+                                            </div>
+                                        </li>
+                                        <li class="ui-line">
+                                            <div class="thumb">
+                                                <img src="../images/msfc_blb.jpg" alt=" 白礼彪">
+                                            </div>
+                                            <div class="con">
+                                                <h5>白礼彪</h5>
+                                                <span>公路学院</span>
+                                            </div>
+                                        </li>
+                                        <li class="ui-line">
+                                            <div class="thumb">
+                                                <img src="../images/msfc_mcq.jpg" alt="马超群">
+                                            </div>
+                                            <div class="con">
+                                                <h5>马超群</h5>
+                                                <span>公路学院</span>
+                                            </div>
+                                        </li>
+                                        <li class="ui-line">
+                                            <div class="thumb">
+                                                <img src="../images/msfc_wk.png" alt="魏堃">
+                                            </div>
+                                            <div class="con">
+                                                <h5>魏堃</h5>
+                                                <span>公路学院</span>
+                                            </div>
+                                        </li>
+                                    </ul><!--ui-banner-slogans end-->
+                                    <a class="ui-banner-arrow ui-banner-arrow-prev png_bg"></a>
+                                    <a class="ui-banner-arrow ui-banner-arrow-next png_bg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
             </div>
-
         </div>
     </div>
+</div>
 
+<!--页脚-->
+<div class="foot">
+    <div class="container">
+        <div class="row">
+            <div class="foot_1 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <div class="foot_1_head">
+                    <p>学生工作</p>
+                </div>
+                <div class="foot_1_content">
+                    <ul>
+                        <li>
+                            <a href="#">办事指南</a>
+                        </li>
+                        <li>
+                            <a href="#">教学资料</a>
+                        </li>
+                        <li>
+                            <a href="#">文档下载</a>
+                        </li>
+                        <li>
+                            <a href="#">就业信息</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="foot_2 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <div class="foot_2_head">
+                    <p>快速链接</p>
+                </div>
+                <div class="foot_2_content">
+                    <ul>
+                        <li>
+                            <a href="#">长安大学主页</a>
+                        </li>
+                        <li>
+                            <a href="#">学生工作知道委员会</a>
+                        </li>
+                        <li>
+                            <a href="#">长安大学教务处</a>
+                        </li>
+                        <li>
+                            <a href="#">长安大学图书馆</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="foot_2 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <div class="foot_2_head">
+                    <p>联系我们</p>
+                </div>
+                <div class="foot_2_content">
+                    <ul>
+                        <li>
+                            <span class="glyphicon glyphicon-map-marker">&nbsp;</span><a href="#">这是一个地址</a>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-envelope">&nbsp;</span><a href="#">这是一个邮编</a>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-earphone">&nbsp;</span><a href="#">这是一个电话</a>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-envelope">&nbsp;</span><a href="#">这是一个邮箱</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="foot_2 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <div class="foot_2_head">
+                    <p>微信公众号</p>
+                </div>
+                <div class="foot_2_content">
+                    <img src="../images/wechat_code.jpg">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.6/jquery-ui.js"></script>
+<script src="../JS/jqueryui.bannerize.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#banners').bannerize({
+            shuffle: 1,
+            interval: "5"
+        });
+    });
+    </script>
 </body>
 </html>

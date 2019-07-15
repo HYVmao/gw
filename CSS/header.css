@@ -1,6 +1,7 @@
 .header{
     width:auto;
     background-color: #333333;
+    display: block;
 }
 
 
@@ -87,8 +88,6 @@
 }
 
 .dropdown {
-    width: 600px;
-    border-right: 1px solid #3f3f3f;
     position: relative;
     display: inline-block;
 }
@@ -112,14 +111,6 @@
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.lower-header{
-    height: 55px;
-}
 
 .dropdown_general{
     background-color: #79120A;
@@ -147,23 +138,9 @@
     
 }
 
-.dropdown-content a:hover{
-    background-color: #79120A;
-    text-decoration: none;
-    color: white;
-
+.navber{
+    min-height: 0;
 }
-
-.dropdown:hover .dropbtn{
-    background-color: #79120A;
-}
-
-.dropdown:hover{
-    background-color: #79120A;
-    border-top: 1px solid #be2e17;
-}
-
-
 
 
 
