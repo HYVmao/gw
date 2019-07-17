@@ -1,6 +1,4 @@
-.demo{
-    padding: 8px 0 5px 0;
-}
+
 nav.navbar.bootsnav{
 background: none;
 font-family: 'Sarabun', sans-serif;
@@ -31,7 +29,7 @@ position: relative;
 transition: all .5s ease;
 z-index: 1;
 }
-nav.navbar.bootsnav ul.nav > li.dropdown > a{ padding: 13px 30px 13px 15px; }
+nav.navbar.bootsnav ul.nav > li.dropdown > a{ padding: 20px 15px; }
 nav.navbar.bootsnav ul.nav > li.active > a,
 nav.navbar.bootsnav ul.nav > li.active > a:hover,
 nav.navbar.bootsnav ul.nav > li > a:hover,
@@ -57,32 +55,24 @@ transform: translateY(-50%);
 left: 100%;
 transition: all 0.3s ease 0.1s;
 }
-nav.navbar.bootsnav ul.nav > li:hover > a > span:before,
-nav.navbar.bootsnav ul.nav > li.active > a > span:before{
-left: 100%;
-}
-nav.navbar.bootsnav ul.nav > li:hover > a > span:after,
-nav.navbar.bootsnav ul.nav > li.active > a > span:after{
-left:0;
-}
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content li a:hover,
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu li a:hover,
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu li a.dropdown-toggle:active,
 nav.navbar ul.nav li.dropdown.on ul.dropdown-menu li.dropdown.on > a{
-color: #c90202 !important;
+color: #fff !important;
 box-shadow: 0 0 8px #fff inset;
 }
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
 position: absolute;
-top: 10px;
-right: 10px;
+top: 17px;
+right: 1px;
 margin: 0 0 0 7px;
 }
 nav.navbar.bootsnav ul.nav > li.dropdown > ul{
 top: 100%;
 transition: all 0.8s ease 0s;
 }
-nav.navbar.bootsnav ul.nav > li.dropdown.on > ul{ top: 120%; }
+nav.navbar.bootsnav ul.nav > li.dropdown.on > ul{ top: 100%; }
 .dropdown-menu.multi-dropdown{
 position: absolute;
 left: -100% !important;
@@ -133,3 +123,20 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 }
 
+.on-color li{
+    border-top:solid 1px #333;
+    border-bottom: 0px;
+}
+.on-color li:hover{
+    border-top: solid 1px #c90202;
+    background-color: #990000;
+}
+
+.dropdown-menu li:hover {
+    color: #fff;
+}
+
+.gwsy{
+    background-color: #ac190e;
+    border-top: solid 1px #c90202 !important;
+}
