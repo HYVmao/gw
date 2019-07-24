@@ -65,7 +65,7 @@ box-shadow: 0 0 8px #fff inset;
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
 position: absolute;
 top: 17px;
-right: 1px;
+right: 1px; 
 margin: 0 0 0 7px;
 }
 nav.navbar.bootsnav ul.nav > li.dropdown > ul{
@@ -137,6 +137,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .gwsy{
-    background-color: #ac190e;
+    background-color: #ac190e ;
     border-top: solid 1px #c90202 !important;
 }
+
