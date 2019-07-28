@@ -523,15 +523,9 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     
     nav.navbar.bootsnav ul.nav > li > a{
         padding: 20px 15px;
-        font-weight: 600;
     }
     
-    nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
-        font-family: "Font Awesome 5 Free";font-weight: 900;
-        content: "\f0d7";
-        margin-left: 5px;
-        margin-top: 2px;
-    }
+
     
     nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
         -moz-box-shadow: 0px 0px 0px;
@@ -544,8 +538,6 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         border-radius: 0px;
         padding: 0;
         width: 200px;
-        border: solid 1px #e0e0e0;
-        border-top: solid 5px;
     }
     
     nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a:hover,
@@ -555,8 +547,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     
     nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li > a{
         padding: 10px 15px;
-        border-bottom: solid 1px #eee;
-        color: #6f6f6f;
+        color: rgb(235, 217, 217);
     }
     
     nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li:last-child > a{
@@ -1039,15 +1030,15 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     }
     
     nav.navbar.bootsnav li.dropdown a.dropdown-toggle:before{
-        font-family: "Font Awesome 5 Free";font-weight: 900;
-        content: "\f105";
+        font-family: 'Glyphicons Halflings';font-weight: 200;
+        content: "\e079";
         float: right;
         font-size: 16px;
         margin-left: 10px;
     }
     
     nav.navbar.bootsnav li.dropdown.on > a.dropdown-toggle:before{
-        content: "\f107";
+        content: "\e114";
     }
     
     nav.navbar.bootsnav .navbar-nav > li > a{
@@ -1080,7 +1071,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         background-color: transparent;
         float: none;
         border: none;
-        padding: 0 0 0 15px !important;
+        text-align: center;
         margin: 0 0 -1px 0 !important;
         -moz-box-shadow: 0px 0px 0px;
         -webkit-box-shadow: 0px 0px 0px;

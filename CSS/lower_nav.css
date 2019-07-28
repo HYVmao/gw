@@ -20,7 +20,6 @@ nav.navbar.bootsnav ul.nav > li > a{
 color: #fff;
 background-color: transparent;
 font-size: 16px;
-font-weight: 600;
 text-transform: uppercase;
 padding: 10px 15px;
 border-radius: 0;
@@ -60,7 +59,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu li a:hover,
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu li a.dropdown-toggle:active,
 nav.navbar ul.nav li.dropdown.on ul.dropdown-menu li.dropdown.on > a{
 color: #fff !important;
-box-shadow: 0 0 8px #fff inset;
 }
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
 position: absolute;
@@ -141,3 +139,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     border-top: solid 1px #c90202 !important;
 }
 
+.dropdown-menu li{
+    color: #fff;
+}
+
+.xl{
+    font-size: 15px;
+    line-height: 15px;
+    color: #fff;
+
+}
