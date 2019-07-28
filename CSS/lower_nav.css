@@ -121,6 +121,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 }
 
+@media(max-width: 768px){
+    .demo{
+        background-color: #990000;
+    }
+}
+
 .on-color li{
     border-top:solid 1px #333;
     border-bottom: 0px;
