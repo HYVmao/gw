@@ -1034,7 +1034,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         content: "\e079";
         float: right;
         font-size: 16px;
-        margin-left: 10px;
+        margin-left: -10px;
     }
     
     nav.navbar.bootsnav li.dropdown.on > a.dropdown-toggle:before{
