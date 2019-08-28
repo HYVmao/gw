@@ -54,12 +54,7 @@ transform: translateY(-50%);
 left: 100%;
 transition: all 0.3s ease 0.1s;
 }
-nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content li a:hover,
-nav.navbar.bootsnav li.dropdown ul.dropdown-menu li a:hover,
-nav.navbar.bootsnav li.dropdown ul.dropdown-menu li a.dropdown-toggle:active,
-nav.navbar ul.nav li.dropdown.on ul.dropdown-menu li.dropdown.on > a{
-color: #fff !important;
-}
+
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
 position: absolute;
 top: 17px;
@@ -77,7 +72,6 @@ left: -100% !important;
 }
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-background-color: #1775e8;
 border: none;
 }
 .dropdown-menu li{background-color: #333}
@@ -94,7 +88,6 @@ nav.navbar.bootsnav .navbar-toggle{
     color: #fff;
     background: transparent !important;
 }
-nav.navbar.bootsnav.navbar-mobile .navbar-collapse{ background-color: #1775e8; }
 nav.navbar.bootsnav ul.nav>li{ margin: 5px auto 15px; }
 nav.navbar.bootsnav.navbar-mobile ul.nav>li>a{
     color: #fff;
@@ -136,9 +129,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     background-color: #990000;
 }
 
-.dropdown-menu li:hover {
-    color: #fff;
-}
 
 .gwsy{
     background-color: #ac190e ;
@@ -153,5 +143,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     font-size: 15px;
     line-height: 15px;
     color: #fff;
+}
 
+.dropdown-menu a:visited{
+    background-color: #333 !important;
 }
