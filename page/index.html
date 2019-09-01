@@ -3,19 +3,14 @@
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>长安大学思想政治工作发展中心</title>
-    <link rel="stylesheet" href="../CSS/header.css">
-    <link rel="stylesheet" href="../CSS/warp.css">
-    <link rel="stylesheet" href="../CSS/news_no1.css">
-    <link rel="stylesheet" href="../CSS/news_no2.css">
-    <link rel="stylesheet" href="../CSS/foot.css">
-    <link rel="stylesheet" href="../CSS/msfc.css">
-    <link rel="stylesheet" href="../CSS/lower_nav.css">
     <link rel="stylesheet" href="../CSS/bootsnav.css"/>
+    <link rel="stylesheet" href="../CSS/css.css">
 
 
     <script type="text/javascript" src="../JS/warp_s.js"></script>
     <script type="text/javascript" src="../JS/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../JS/bootsnav.js"></script>
+    <script type="text/javascript" src="../JS/roll.js"></script>
 
     <!--Bootstrap-->
     <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
@@ -35,6 +30,10 @@
                 </div>
                 <div class="col-lg-4 col-md-5 col-sm-5 hidden-xs visible-lg">
                     <div class="quick-link">
+                        &nbsp;
+                        <a><img src="../images/xian2.png">&nbsp;学校官网</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a><img src="../images/xian3.png">&nbsp;信息门户</a>
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="输入关键词搜索站内消息">
                             <span class="input-group-btn">
@@ -53,7 +52,7 @@
                 <nav class="navbar navbar-default navbar-mobile bootsnav">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                            <span class="glyphicon glyphicon-th-list"></span>
+                            <span class="glyphicon glyphicon-th-list" style="color: rgb(255, 0, 50);"></span>
                         </button>
                         <div class="navbar-img visible-xs">
                             <img src="../images/logo.png" width="100%">
@@ -61,11 +60,12 @@
                     </div>
                     <div class="collapse navbar-collapse" id="navbar-menu">
                         <ul class="nav navbar-nav on-color" data-in="fadeInDown" data-out="fadeOutUp">
-                            <li class="active gwsy"><a href="#" data-hover="Home">官网首页</span></a></li>
+                            <li class="active gwsy"><a href="#" data-hover="Home">首页</span></a></li>
+                            <li><a href="#" data-hover="About">中心简介</span></a></li>
                             <li><a href="#" data-hover="About">理论研究</span></a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="Shortcodes">实践创新</span></a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu" style="opacity: 0.85">
                                     <li><a href="news_list.html">二级菜单1</a></li>
                                     <li><a href="#">二级菜单2</a></li>
                                     <li><a href="#">二级菜单3</a></li>
@@ -74,20 +74,17 @@
                                 </ul>
                             </li>
                             <li><a href="#" data-hover="About">决策咨询</span></a></li>
-                            
+
                             <li><a href="#" data-hover="Contact">培训交流</span></a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="Pages">工作简报</span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">二级菜单1</a></li>
-                                    <li><a href="#">二级菜单2</a></li>
-                                    <li><a href="#">二级菜单3</a></li>
-                                    <li><a href="#">二级菜单4</a></li>
-                                    <li><a href="#">二级菜单5</a></li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="Shortcodes">简报要报</span></a>
+                                <ul class="dropdown-menu" style="opacity: 0.85">
+                                    <li><a href="#">工作简报</a></li>
+                                    <li><a href="#">成果要报</a></li>
                                 </ul>
                             </li>
                             <li><a href="#" data-hover="Portfolio">研究团队</span></a></li>
-                            
+
                             <li><a href="#" data-hover="Contact">联系我们</span></a></li>
                         </ul>
                     </div>
@@ -95,13 +92,7 @@
             </div>
         </div>
     </div>
-
 </header>
-
-
-
-
-</div>
 
 <!--轮播图-->
 <div id="myCarousel" class="carousel slide warp">
@@ -133,7 +124,6 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-</div>
 
 <!--news_no1-->
 <div class="news_no1">
@@ -145,7 +135,7 @@
                     <div class="news_no1_r_head">
                         <a href="#" class="icon news_no1_r_title">
 
-                            <span class="glyphicon glyphicon-volume-down" style="color: rgb(255, 0, 50);"></span>
+                            <span class="glyphicon glyphicon-list-alt" style="color: rgb(255, 0, 50);"></span>
                             新闻播报<span class="news_no1_r_small_title">Top Notices</span>
                         </a>
                     </div>
@@ -208,7 +198,7 @@
                         <span class="news_no1_r_more">更多>></span>
                         <a href="#" class="icon news_no1_r_title">
 
-                            <span class="glyphicon glyphicon-volume-down" style="color: rgb(255, 0, 50);"></span>
+                            <span class="glyphicon glyphicon-bell" style="color: rgb(255, 0, 50);"></span>
                             通知公告<span class="news_no1_r_small_title">Top Notices</span>
                         </a>
                     </div>
@@ -284,80 +274,157 @@
     <div class="news_no2">
         <div class="container">
             <div class="row">
-                <div class="news_no2_l col-lg-4 col-md-4 col-sm-12 col-sm-12">
-                    <p class="news_no2_l_title"><span class="glyphicon glyphicon-book" style="color: rgb(255, 0, 0);">&nbsp;</span>理论研究</p>
-                    <HR class="hr">
-                    <div class="news_no2_l_new">
-                        <div class="news_no2_l_img">
-                            <img src="../images/new_no2_l_pic.jpg">
-                        </div>
-                        <div class="news_no2_l_neir">
-                            <div class="new_no2_l_news_title">
-                                <a href="#">全省教育网络安全和信息化工作视频会议在我校设立分会场</a>
-                            </div>
-                            <div class="new_no2_l_news_text">
-                                <p>7月11日，陕西省教育厅组织召开了2019年全省教育网络安全和信息化工作视频会议</p>
-                            </div>
+                <div class="news_no2_l border_r col-lg-4 col-md-4 col-sm-12 col-sm-12">
+                    <div class="border_round">
+                        <p class="news_no2_l_title"><span class="glyphicon glyphicon-search" style="color: rgb(255, 0, 0);">&nbsp;</span>理论研究</p>
+                        <HR class="hr">
+                        <div class="news_no2_l_news">
+                            <ul>
+                                <li><a href="#"> “新中国70周年马克思主义中国化理论创新与发展”学术研讨会在我校举行</a></li>
+                                <li><a href="#">我校教师在陕西高校思政课教师“大练兵”活动中获得佳绩</a></li>
+                                <li><a href="#">中国共产党长安大学纪律检查委员会举行第一次全体会议</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <br>
-                    <div class="news_no2_l_news">
-                        <ul>
-                            <li><a href="#"> “新中国70周年马克思主义中国化理论创新与发展”学术研讨会在我校举行</a></li>
-                            <li><a href="#">我校教师在陕西高校思政课教师“大练兵”活动中获得佳绩</a></li>
-                            <li><a href="#">中国共产党长安大学纪律检查委员会举行第一次全体会议</a></li>
-                            <li><a href="#">中国共产党长安大学第四届委员会举行第一次全体会议</a></li>
-                            <li><a href="#">【党代会进行时】中国共产党长安大学第四次代表大会胜利闭幕</a></li>
-                            <li><a href="#">【党代会进行时】中国共产党长安大学第四次代表大会主席团第三次会议召开</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div class="news_no2_l col-lg-4 col-md-4 col-sm-12 col-sm-12">
-                    <p class="news_no2_l_title"><span class="glyphicon glyphicon-globe" style="color: rgb(255, 0, 50);">&nbsp;</span>实践创新</p>
-                    <HR class="hr">
-                    <div class="news_no2_l_new">
-                        <div class="news_no2_l_img">
-                            <img src="../images/new_no2_l_pic1.jpg">
+                    <div class="border_round">
+                        <p class="news_no2_l_title border_t"><span class="glyphicon glyphicon-question-sign" style="color: rgb(255, 0, 0);">&nbsp;</span>决策咨询</p>
+                        <HR class="hr">
+                        <div class="news_no2_l_news">
+                            <ul>
+                                <li><a href="#"> “新中国70周年马克思主义中国化理论创新与发展”学术研讨会在我校举行</a></li>
+                                <li><a href="#">我校教师在陕西高校思政课教师“大练兵”活动中获得佳绩</a></li>
+                                <li><a href="#">中国共产党长安大学纪律检查委员会举行第一次全体会议</a></li>
+                            </ul>
                         </div>
-                        <div class="news_no2_l_neir">
-                            <div class="new_no2_l_news_title">
-                                <a href="#">教育部高等学校道路运输与工程教学指导分委员会工作会议在我校召开</a>
-                            </div>
-                            <div class="new_no2_l_news_text">
-                                <p>8月25日，教育部高等学校道路运输与工程教学指导分委员会2019年工作...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="news_no2_l_news">
-                        <ul>
-                            <li><a href="#"> 我校在2019年全国大学生电子设计竞赛（陕西赛区）取得佳绩</a></li>
-                            <li><a href="#">我校代表队在第十三届化工设计竞赛全国总决赛中荣获全国一等奖</a></li>
-                            <li><a href="#">我校教师在第十届全国高等学校测绘类专业青年教师讲课竞赛中再获佳绩</a></li>
-                            <li><a href="#">我校代表队在中国大学生物理学术竞赛中再创佳绩</a></li>
-                            <li><a href="#">我校代表队在全国大学生节能减排社会实践与科技竞赛中获全国二等奖</a></li>
-                            <li><a href="#">我校教师在首届全国高校混合式教学设计创新大赛中荣获一等奖</a></li>
-                        </ul>
                     </div>
                 </div>
 
                 <div class="news_no2_l col-lg-4 col-md-4 col-sm-12 col-sm-12">
-                    <p class="news_no2_l_title"><span class="glyphicon glyphicon-globe" style="color: rgb(255, 0, 50);">&nbsp;</span>工作简报</p>
-                    <HR class="hr">
-                    <div class="lxwm_pic">
-                        <a href="#"><img src="../images/lxwm1.jpg"></a>
+                    <div class="border_round">
+                        <p class="news_no2_l_title"><span class="glyphicon glyphicon-globe" style="color: rgb(255, 0, 50);">&nbsp;</span>实践创新</p>
+                        <HR class="hr">
+                        <div class="news_no2_l_news">
+                            <ul>
+                                <li><a href="#"> 我校在2019年全国大学生电子设计竞赛（陕西赛区）取得佳绩</a></li>
+                                <li><a href="#">我校代表队在第十三届化工设计竞赛全国总决赛中荣获全国一等奖</a></li>
+                                <li><a href="#">我校教师在第十届全国高等学校测绘类专业青年教师讲课竞赛中再获佳绩</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="lxwm_pic">
-                        <a href="#"><img src="../images/lxwm2.jpg"></a>
+                    <div class="border_round">
+                        <p class="news_no2_l_title border_t"><span class="glyphicon glyphicon-send" style="color: rgb(255, 0, 50);">&nbsp;</span>培训交流</p>
+                        <HR class="hr">
+                        <div class="news_no2_l_news">
+                            <ul>
+                                <li><a href="#"> 我校在2019年全国大学生电子设计竞赛（陕西赛区）取得佳绩</a></li>
+                                <li><a href="#">我校教师在第十届全国高等学校测绘类专业青年教师讲课竞赛中再获佳绩</a></li>
+                                <li><a href="#">我校代表队在中国大学生物理学术竞赛中再创佳绩</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="lxwm_pic">
-                        <a href="#"><img src="../images/lxwm3.jpg"></a>
+                </div>
+
+                <div class="talk col-lg-4 col-xs-12">
+                    <div class="border_round">
+                        <div class="">
+                            <ul id="myTab" class="nav nav-tabs double">
+                                <li class="active" onmouseover="out1()">
+                                    <a href="#home" data-toggle="tab">
+                                        重要讲话
+                                    </a>
+                                </li>
+                                <li class="fg">/</li>
+                                <li onmouseover="out2()"><a href="#ios" data-toggle="tab">文献资料</a></li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content">
+
+                                <!--重要讲话-->
+                                <div class="tab-pane fade in active warp_s" id="home">
+                                    <div id="list-wrapper" style="top: 0" onmouseover="stop()" onmouseout="start()">
+                                        <ul class="notice-list" id="notice-list">
+                                            <li>
+                                                <span class="glyphicon glyphicon-record" style="color: rgb(237, 28, 35);"></span>
+                                                <a href="#">习近平：在省部级专题研讨班上发表重要讲话</a>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-record" style="color: rgb(237, 28, 35);"></span>
+                                                <a href="#">栗战书：主持人大常委会第十二次会议闭幕会并作讲话</a>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-record" style="color: rgb(237, 28, 35);"></span>
+                                                <a href="#">习近平：在中央和国家机关党的建设工作会议并发表重要讲话</a>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-record" style="color: rgb(237, 28, 35);"></span>
+                                                <a href="#">习近平：在“纪念五四运动100周年大会”上的重要讲话</a>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-record" style="color: rgb(237, 28, 35);"></span>
+                                                <a href="#">习近平：在全国网络安全和信息化工作会议上的重要讲话</a>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-record" style="color: rgb(237, 28, 35);"></span>
+                                                <a href="#">习近平：在解决“两不愁三保障”突出问题座谈会上的讲话</a>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-record" style="color: rgb(237, 28, 35);"></span>
+                                                <a href="#">习近平：中国共产党第十八届中央委员会第六次全体会议上的重要讲话</a>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-record" style="color: rgb(237, 28, 35);"></span>
+                                                <a href="#">习近平：在出席二十国集团领导人第十四次峰会上发表重要讲话</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="notice-list" id="notice-list-2">
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!--文献资料-->
+                                <div class="tab-pane fade warp_s" id="ios">
+                                    <div id="list-wrapper_b" style="top: 0" onmouseover="stop_b()" onmouseout="start_b()">
+                                        <ul class="notice-list_b" id="notice-list_b">
+                                            <li>
+                                                <span class="glyphicon glyphicon-record" style="color: rgb(237, 28, 35);"></span>
+                                                <a href="#">教育部办公厅关于开展第二批新时代高校党建示范创建和质量创优工作的通知</a>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-record" style="color: rgb(237, 28, 35);"></span>
+                                                <a href="#">教育部办公厅关于举办高校学生党支部书记网络培训示范班的通知</a>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-record" style="color: rgb(237, 28, 35);"></span>
+                                                <a href="#">教育部办公厅关于举办“第十一届高校辅导员年度人物”推选展示活动的通知</a>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-record" style="color: rgb(237, 28, 35);"></span>
+                                                <a href="#">中共教育部党组关于加强和改进高校领导干部深入基层联系学生工作的通知</a>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-record" style="color: rgb(237, 28, 35);"></span>
+                                                <a href="#">教育部办公厅关于开展2019年“4·15”全民国家安全教育日活动的通知</a>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-record" style="color: rgb(237, 28, 35);"></span>
+                                                <a href="#">教育部办公厅关于公布第二批“三全育人”综合改革试点单位名单的通知</a>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-record" style="color: rgb(237, 28, 35);"></span>
+                                                <a href="#">教育部办公厅关于公布首批“三全育人”综合改革试点单位名单的通知</a>
+                                            </li>
+                                            <li>
+                                                <span class="glyphicon glyphicon-record" style="color: rgb(237, 28, 35);"></span>
+                                                <a href="#">	教育部办公厅关于开展校园不良网贷风险警示教育及相关工作的通知</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="notice-list_b" id="notice-list-2_b">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="lxwm_pic">
-                        <a href="#"><img src="../images/lxwm4.jpg"></a>
-                    </div>
+
                 </div>
 
             </div>
@@ -370,7 +437,11 @@
 <div class="msfc">
     <div class="container">
         <div class="head-title">
-            <p class="text-center">研究团队</p>
+
+            <p class="text-center">
+                <span class="glyphicon glyphicon-user" style="color: rgb(237, 28, 35);"></span>
+                &nbsp;研究团队
+            </p>
         </div>
         <div class="home-item index-alumni">
             <div class="grey_bg"></div>
@@ -379,7 +450,7 @@
                         <div class="index-new">
                             <div class="indexadd">
                                 <div id="banners" class="ui-banner row">
-                                    <ul class="ui-banner-slides col-lg-9 col-md-8 col-xs-12">
+                                    <ul class="ui-banner-slides msfc_left col-lg-9 col-md-8 col-xs-12">
                                         <li>
                                             <a href="#" target="_blank">
                                                 <img src="../images/msfc_lzz.jpg" alt="刘状壮">
@@ -484,88 +555,40 @@
 <div class="foot">
     <div class="container">
         <div class="row">
-            <div class="foot_1 col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                <div class="foot_1_head">
-                    <p>学生工作</p>
-                </div>
-                <div class="foot_1_content">
-                    <ul>
-                        <li>
-                            <a href="#">办事指南</a>
-                        </li>
-                        <li>
-                            <a href="#">教学资料</a>
-                        </li>
-                        <li>
-                            <a href="#">文档下载</a>
-                        </li>
-                        <li>
-                            <a href="#">就业信息</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="foot_in col-lg-12">
+                <span><a href="http://www.moe.gov.cn/">中华人民共和国教育部</a></span>
+                <span><a href="http://www.zytzb.gov.cn">中共中央统一战线工作部</a></span>
+                <span><a href="http://www.moe.gov.cn">思想政治工作司</a></span>
+                <span><a href="http://www.sizhengwang.cn/">全国高校思想政治工作网</a></span>
+                <span><a href="http://www.qstheory.cn/">求是网</a></span>
+                <span><a href="http://www.qizhiwang.org.cn/">旗帜网</a></span>
+                <span><a href="http://www.chd.edu.cn/">长安大学</a></span>
+                <span><a href="http://xgb.chd.edu.cn/">长安大学学生工作部(处)</a></span>
             </div>
-
-            <div class="foot_2 col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                <div class="foot_2_head">
-                    <p>快速链接</p>
+            <div class="col-lg-12">
+                <div class="col-lg-1 col-md-1 hidden-xs hidden-sm chd_inf">
+                    <img src="../images/chd_logo.png" width="100%">
                 </div>
-                <div class="foot_2_content">
-                    <ul>
-                        <li>
-                            <a href="#">长安大学主页</a>
-                        </li>
-                        <li>
-                            <a href="#">学生工作知道委员会</a>
-                        </li>
-                        <li>
-                            <a href="#">长安大学教务处</a>
-                        </li>
-                        <li>
-                            <a href="#">长安大学图书馆</a>
-                        </li>
-                    </ul>
-
+                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 center_info">
+                    <div>
+                        <span>长安大学思想政治工作发展中心主办</span>
+                        <span class="hidden-xs">|</span>
+                        <span>地址：西安市未央区长大南路356号</span>
+                        <span>邮箱：jyglk@chd.edu.cn</span>
+                        <span>电话：029-61105156</span>
+                    </div>
+                    <div>
+                        <span>版权所有&copy;长安大学思想政治工作发展中心</span>
+                    </div>
                 </div>
-            </div>
-
-            <div class="foot_2 col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                <div class="foot_2_head">
-                    <p>联系我们</p>
+                <div class="col-lg-1 col-md-1 hidden-xs hidden-sm chd_inf">
+                    <img src="../images/chd_code.jpg" width="100%">
                 </div>
-                <div class="foot_2_content">
-                    <ul>
-                        <li>
-                            <span class="glyphicon glyphicon-map-marker">&nbsp;</span><a href="#">这是一个地址</a>
-                        </li>
-                        <li>
-                            <span class="glyphicon glyphicon-envelope">&nbsp;</span><a href="#">这是一个邮编</a>
-                        </li>
-                        <li>
-                            <span class="glyphicon glyphicon-earphone">&nbsp;</span><a href="#">这是一个电话</a>
-                        </li>
-                        <li>
-                            <span class="glyphicon glyphicon-envelope">&nbsp;</span><a href="#">这是一个邮箱</a>
-                        </li>
-                    </ul>
 
-                </div>
-            </div>
-
-            <div class="foot_2 col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                <div class="foot_2_head">
-                    <p>微信公众号</p>
-                </div>
-                <div class="foot_2_content">
-                    <img src="../images/wechat_code.jpg">
-
-                </div>
             </div>
         </div>
     </div>
 </div>
-
-
 
 
 <script src="../JS/jquery-ui.js"></script>
@@ -578,5 +601,69 @@
         });
     });
     </script>
+<script>
+    var ROLL_SPEED = 115;
+    var noticeList1 = document.getElementById('notice-list');
+    var noticeList2 = document.getElementById('notice-list-2');
+    var listWrapper = document.getElementById('list-wrapper');
+    noticeList2.innerHTML=noticeList1.innerHTML;
+
+    var timer = setInterval(rollStart, ROLL_SPEED);
+
+    function stop(){
+        window.clearInterval(timer);
+    }
+
+    function start(){
+        timer = window.setInterval(rollStart, ROLL_SPEED)
+    }
+    function rollStart() {
+        if (Math.abs(_subStr(listWrapper.style.top)) >= noticeList1.clientHeight) {
+            listWrapper.style.top = '0px'
+        } else {
+            var top = listWrapper.style.top
+            listWrapper.style.top = _subStr(top)-1+'px'
+        }
+    }
+    // 截取px前数值
+    function _subStr(str) {
+        var index = str.indexOf('px');
+        if (index > -1) {
+            return parseFloat(str.substr(0, index + 1))
+        }
+    }
+
+
+    var ROLL_SPEED_B = 115;
+    var noticeList1_b = document.getElementById('notice-list_b');
+    var noticeList2_b = document.getElementById('notice-list-2_b');
+    var listWrapper_b = document.getElementById('list-wrapper_b');//////
+    noticeList2_b.innerHTML=noticeList1_b.innerHTML;
+
+    var timer_b = setInterval(rollStart_b, ROLL_SPEED_B);
+
+    function stop_b(){
+        window.clearInterval(timer_b);
+    }
+
+    function start_b(){
+        timer_b = window.setInterval(rollStart_b, ROLL_SPEED)
+    }
+    function rollStart_b() {
+        if (Math.abs(_subStr(listWrapper_b.style.top)) >= noticeList1_b.clientHeight) {
+            listWrapper_b.style.top = '0px'
+        } else {
+            var top = listWrapper_b.style.top
+            listWrapper_b.style.top = _subStr_b(top)-1+'px'
+        }
+    }
+    // 截取px前数值
+    function _subStr_b(str_b) {
+        var index = str_b.indexOf('px');
+        if (index > -1) {
+            return parseFloat(str_b.substr(0, index + 1))
+        }
+    }
+</script>
 </body>
 </html>
